@@ -1,0 +1,37 @@
+
+.box1{
+    width: 320px;
+    height: 500px;
+    border: 1px solid black;
+    flex-shrink: 0;
+  
+}
+.box2{
+    width: 320px;
+    height: 300px;
+    border: 1px solid black;
+    flex-shrink: 1;
+   
+}
+.box3{
+    width: 320px;
+    height: 100px;
+    border: 1px solid black;
+    align-self:flex-start;
+    flex-shrink: 1;
+}
+.box4{
+    width: 320px;
+    height: 600px;
+    border: 1px solid black;
+    flex-shrink: 2;
+}
+.box {
+    display: flex;
+    flex-direction:row-reverse; /*设置主轴的方向*/
+    flex-wrap: nowrap; /* 设置子元素是否可以换行 */
+    justify-content: space-between; /* 规定主轴上的对齐方式 */
+    align-items: center; /* 规定交叉轴上的对齐方式*/
+    align-content: center; /* 规定出现多根轴线时的对齐方式 仅有一根轴线时该属性无效*/
+    column-gap: 20px;
+}
